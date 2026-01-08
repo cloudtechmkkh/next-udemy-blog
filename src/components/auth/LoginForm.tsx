@@ -3,7 +3,6 @@
     Card,
     CardContent,
     CardHeader,
-    CardTitle,
 } from "@/components/ui/card"
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -18,7 +17,7 @@ export default function LoginForm() {
   );
 
   return(
-    <Card className="w-full max-w-md mx-auto p-8">
+    <Card className="w-full max-w-xl mx-auto p-8">
         <CardHeader>
             <div className="font-black">
               ログイン

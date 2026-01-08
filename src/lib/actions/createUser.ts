@@ -34,7 +34,6 @@ export async function createUser(
     formData: FormData
 ): Promise<ActionState>
 {
-    console.log("DB path:", process.env.DATABASE_URL);
    //フォームから渡ってきた情報を取得
    const rawFormData = Object.fromEntries(
     ["name", "email", "password", "confirmPassword"].map(field => [

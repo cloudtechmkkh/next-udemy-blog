@@ -39,4 +39,14 @@ export const { auth, signIn, signOut, handlers } = NextAuth({
       },
     }),
   ],
+  callbacks: { //nextAuth.jsを参照
+    async session({session, token}) {
+      if(session.user) {
+        session.user.id = (token.id || token.sub || '') as string; //token.subがclaimである
+        session.user.name = token.name ?? '';
+        session.user.email = token.email ?? '';
+      }
+      return session;
+    }
+  }
 });
