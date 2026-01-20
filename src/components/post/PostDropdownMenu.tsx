@@ -33,14 +33,14 @@ export default function PostDropdownMenu({postId}:{postId:string}) {
                     setShowDeleteDialog(true)
                 }}
                 >削除</DropdownMenuItem>
-            </DropdownMenuContent>
-            {showDeleteDialog && (
+                {showDeleteDialog && (
                 <DeletePostDialog 
                 postId={postId}
                 isOpen={showDeleteDialog}
                 onOpenChange={handleDeleteDialogChange}
                 />
             )}
+            </DropdownMenuContent>
         </DropdownMenu>
     </>
   )
