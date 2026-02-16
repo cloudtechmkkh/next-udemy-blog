@@ -44,7 +44,7 @@ export default function LoginForm() {
           )}
         </div>
           </form>
-          <a href="/signup" className="text-blue-500 hover:underline flex justify-center">アカウントを作成</a>
+          <a href="/register" className="text-blue-500 hover:underline flex justify-center">アカウントを作成</a>
         </CardContent>
     </Card>
   )

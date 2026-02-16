@@ -53,6 +53,7 @@ export default function RegisterForm(){
                     </div>
                     <Button type="submit" className="w-full">登録</Button>
                 </form>
+                <a href="/login" className="text-blue-500 hover:underline flex justify-center mt-3">アカウントを作成済みですか？ログイン</a>
             </CardContent>
         </Card>
     )
