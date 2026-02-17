@@ -17,7 +17,7 @@ export default function PostCard({ post }: PostCardProps) {
             {post.topImage && (
                     <div className="relative w-full h-48">
                         <Image
-                            src={post.topImage}
+                            src={`https://bzroesumsphawayeaydr.supabase.co/storage/v1/object/public/udemy_next_blog_bucket/${post.topImage}`}
                             alt={post.title}
                             fill
                             className="rounded-t-md object-cover"
