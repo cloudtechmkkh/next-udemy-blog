@@ -54,9 +54,11 @@ async function saveImageToSupabase(file: File): Promise<string | null> {
     return null
   }
 
-  const { data: publicUrlData } = supabase.storage
-    .from("udemy_next_blog_bucket")
-    .getPublicUrl(fileName)
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const bucketName = "udemy_next_blog_bucket"
+  
+  // Supabase公開URLの形式
+  const publicUrl = `${supabaseUrl}/storage/v1/object/public/${bucketName}/${fileName}`
 
-  return publicUrlData.publicUrl
+  return publicUrl
 }
