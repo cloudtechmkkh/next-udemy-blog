@@ -38,8 +38,8 @@ export default function LoginForm() {
           className="flex h-8 items-end space-x-1"
         >
           {errorMessage && (
-              <div className="text-red-500" >
-              <p className="text-sm text-red-500">{errorMessage}</p>
+              <div className="text-red-500 flex justify-center">
+              <p className="text-sm font-bold text-red-500">{errorMessage}</p>
               </div>
           )}
         </div>

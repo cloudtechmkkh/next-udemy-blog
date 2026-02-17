@@ -27,28 +27,28 @@ export default function RegisterForm(){
                         <Label htmlFor="name">名前</Label>
                         <Input id="name" type="text" name="name" required />
                         {state.errors.name && (
-                            <p className="text-red-500 text-sm mt-1">{state.errors.name.join(',')}</p>
+                            <p className="text-red-500 font-bold text-sm mt-1 flex justify-center">{state.errors.name.join(',')}</p>
                         )}
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="email">メールアドレス</Label>
                         <Input id="email" type="email" name="email" required />
                         {state.errors.email && (
-                            <p className="text-red-500 text-sm mt-1">{state.errors.email.join(',')}</p>
+                            <p className="text-red-500 font-bold text-sm mt-1 flex justify-center">{state.errors.email.join(',')}</p>
                         )}
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="password">パスワード</Label>
                         <Input id="password" type="password" name="password" required />
                         {state.errors.password && (
-                            <p className="text-red-500 text-sm mt-1">{state.errors.password.join(',')}</p>
+                            <p className="text-red-500 font-bold text-sm mt-1 flex justify-center">{state.errors.password.join(',')}</p>
                         )}
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="confirmPassword">パスワード(確認)</Label>
                         <Input id="confirmPassword" type="password" name="confirmPassword" required />
                         {state.errors.confirmPassword && (
-                            <p className="text-red-500 text-sm mt-1">{state.errors.confirmPassword.join(',')}</p>
+                            <p className="text-red-500 font-bold text-sm mt-1 flex justify-center">{state.errors.confirmPassword.join(',')}</p>
                         )}
                     </div>
                     <Button type="submit" className="w-full">登録</Button>
